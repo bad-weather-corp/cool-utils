@@ -13,6 +13,13 @@ Note: I may have added word **"cool"** inside every interface and/or method, bec
 # Usage
 1. checkout next to your application folder
 2. cd cool-utils && npm install && npm run build
+    ```
+    cd cool-utils
+    npm install
+    npm run nem-sdk
+    npm run build
+    ```
+    * Note: `mkdir -p` used in  `npm run nem-sdk` doesn't work properly on Windows, you have to execute that sequence manually the windows way; you need to place `nem-sdk.d.ts` file into `node_modules/@types/nem-sdk/` folder under the name `index.d.ts`; (you can also copy-paste the given command from package.json into in linux like environment shell (git terminal, cygwin, ...));
 3. in your hot/cold application package.json
     * add dependency
         ```
@@ -22,8 +29,8 @@ Note: I may have added word **"cool"** inside every interface and/or method, bec
             ...
         }
         ```
-    * run npm install
-
+    * run `npm install`
+    
 ## TODO:
 * replace with real README.md, setup git repository, setup tests, continue following
 * add code example
